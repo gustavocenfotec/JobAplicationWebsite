@@ -1,0 +1,78 @@
+{
+    "client":[
+        {
+            "email":"gustavo@gmail.com",
+            "name":"Gustavo",
+            "surname":"Zelaya",
+            "pass": "cristovive",
+            "sujeto": "client",
+            "level": "1",
+            "gender":"mujer",
+            "active":"1",
+            "inactive":"0"
+        },
+        {
+            "email":"demo@gmail.com",
+            "name":"Demo",
+            "surname":"Stracion",
+            "pass": "diosesbueno",
+            "sujeto": "client",
+            "level": "2",
+            "gender":"otro",
+            "active":"1",
+            "inactive":"0"
+        },
+        {
+            "email":"alondra@gmail.com",
+            "name":"Lola",
+            "surname":"Lopez",
+            "pass": "empresados",
+            "sujeto": "client",
+            "level": "3",
+            "gender":"mujer",
+            "active":"1",
+            "inactive":"0"
+        },
+        {
+            "email":"administrador@gmail.com",
+            "name":"Juan",
+            "surname":"Caldera",
+            "pass": "administrador2",
+            "sujeto": "client",
+            "level": "4",
+            "gender": "hombre",
+            "active":"4",
+            "inactive":"0"
+        }
+    ],
+    "empress": [
+        {
+            "email":"luis@gmail.com",
+            "pass":"diositose",
+            "name":"luisInc",
+            "sujeto": "empresa",
+            "level":"5"
+        },
+        {
+            "email":"pedro@gmail.com",
+            "pass":"megustahe",
+            "name":"FoxHoundSA",
+            "sujeto": "empresa",
+            "level":"5"
+        },
+        {
+            "email":"juan@gmail.com",
+            "pass":"todosben",
+            "name":"Heisenberg Inc",
+            "sujeto": "empresa",
+            "level":"5"
+        },
+        {
+            "email":"grandeciclo@gmail.com",
+            "pass":"grandecis",
+            "name":"Abstract Inc",
+            "sujeto": "empresa",
+            "level":"5"
+        }
+    ]
+}

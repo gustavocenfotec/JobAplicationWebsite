@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage_general.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="homepage_general_usuario_controller.js"></script>
+    <title>Homepage Reclutador</title>
+</head>
+<body>
+    <!-- se escribe el titulo que encabeza la pagina -->
+    <header>
+        <h1>Ministerio de Trabajo y Seguridad Social (MTSS)</h1>
+    </header>
+   <!-- se declaran los botones que estan presentes en la barra de navegacion -->
+    <nav>
+        <!-- un dropdown para las funciones de reporte disponibles para el reclutador -->
+    <div id="interact">
+        <div class="reporte">
+            <button class="drop_reporte">Reporte</button>
+            <div class="op_reporte">
+                <a href="/ProyectoUniversidad1 v Final/Reportes/reporte_puestos_laborales/UI/R_puestos_laborales/reporte_puestos_laborales.html" id="r_ea">Reportes de estado de aplicaciones</a>
+                <a href="/ProyectoUniversidad1 v Final/Reportes/reporte_invitaciones.empresas/UI/R_Invitaciones/reporte_invitaciones.html" id="r_ei">Reportes de estado de invitaciones</a>
+                <a href="/ProyectoUniversidad1 v Final/Reportes/reporte_aplicacion_usuario_final/UI/R_aplicacion/reporte_aplicacion_usuario_final.html" id="r_miap">Reportes de mi aplicación</a>
+            </div>
+        </div>
+        <!-- un dropdown para las funciones de gestion disponibles para el reclutador -->
+        <div class="gestion">
+            <button class="drop_gestion">Gestión</button>
+            <div class="op_gestion">
+                <a href="/ProyectoUniversidad1 v Final/Formularios/Invitacion_Puesto_Laboral/UI/f_inv_laboral_controller/formulario_invitacion_trabajo.html" id="inv_pt">Invitación a puesto laboral</a>
+                <a href="/ProyectoUniversidad1 v Final/Formularios/Edicion_Aplicaciones/UI/f_edi_ap_controller/formulario_edicion_aplicaciones.html" id="ed_ap">Editar aplicaciones</a>
+                <a href="/ProyectoUniversidad1 v Final/Formularios/Encuesta/UI/F_encuesta_controller/formulario_encuesta.html" id="en">Encuestas</a>
+            </div>
+        </div>
+    </div>
+        <!-- un boton anclado a la pantalla de login que permite salir de la pagina web -->
+        <button id="logout">LogOut</button>
+    </nav> 
+
+    <main>
+    <!-- Se declara la primera mitad navegable de la pagina-->
+        <div class="perfil">
+             <img src="/ProyectoUniversidad1 v Final/Imagenes/perfil_foto_usuario.png" id="profile">
+            <!-- Aqui se agrega la informacion de  nombre y apellido y una imagen que permite ir a la pagina de perfil-->
+            <div class="edit">
+                <p id="NyA"></p>
+                <a href="/ProyectoUniversidad1 v Final//Users/Perfiles/perfil_usuario/modules/perfil_usuario.html"><img src="/ProyectoUniversidad1 v Final/Imagenes/pencil.png" id="pencil"></a>
+            </div>
+        </div>
+        <!--En la segunda mitad del main se muestra dos tablas que ponen la informacion de los puestos con aplicaciones-->
+        <div class="puestos">
+            <p id="descripcion">Aplicaciones</p>
+            <table id="puesto_a">
+                <thead>
+                    <th>Empresa</th>
+              <th>Puesto</th>
+              <th>Aplicación Recibida</th>
+              <th>Aplicación en Revision</th>
+              <th>Aprobada</th>
+              <th>Rechazada</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre del usuario</td>
+                    </tr>
+                    <tr>
+                        <td>Detalles del usuario</td>
+                    </tr>
+                    <tr>
+                        <td>Estado de aplicaciones</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <table id="puesto_b">
+                <thead>
+                    <tr>
+                        <th>Nombre del puesto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre del usuario</td>
+                    </tr>
+                    <tr>
+                        <td>Detalles del usuario</td>
+                    </tr>
+                    <tr>
+                        <td>Estado de aplicaciones</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </div>
+    </main>
+<!--Aqui la segunda parte de la aplicacion web que contiene la informacion de los puestos que ofrece la empresa,
+        junto a un boton que permite agregar mas puestos disponibles-->
+    <section>
+        <div class="p_empresa">
+            <p id="texto_e">Puestos Disponibles en Bolsa de  Empleo</p>
+            <table id="puesto_c">
+                <thead>
+                    <tr>
+                        <th>Nombre de la Empresa</th>
+                        <th>Nombre del Puesto</th>
+                        <th>Rango Salarial</th>
+                        <th>Requisitos Mínimos</th>
+                        <th>Atributos Deseables</th>
+                        <th>Aplicar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rango Salarial:1000000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Requisitos Minimos:2+ de Experiencia en JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Requisitos Deseables:Conocimientos en Angular</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/Mocups_Puestos/Ejemplo_1/ejemplo_puesto1.html">Aplicar</a></td>
+                    </tr>
+                </tbody>
+                <table id="puesto_d">
+                    <!-- <thead>
+                        <tr>
+                            <th>Nombre del puesto:Ingeniero Industrial </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rango Salarial:720000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Requisitos 2+ de Experiencia en Manejo de Personal</td>
+                        </tr>
+                        <tr>
+                            <td>Requisitos Deseables:Conocimientos en Mercado Culinario</td>
+                        </tr>
+                        <tr>
+                            <td><a href="/Mocups_Puestos/Ejemplo_2/ejemplo_puesto2.html">Aplicar</a></td>
+                        </tr>
+                    </tbody> -->
+                </table>
+                <a href="/ProyectoUniversidad1 v Final/Formularios/Formulario_Oferta_Laboral/UI/F_laboral/formulario_oferta_laboral.html"><img src="/ProyectoUniversidad1 v Final/Imagenes/plus.png" id="add"></a>
+        </div>
+    </section>
+    <!--Finalmente tenemos un foooter con breve informacion de la aplicacion web-->
+    <footer>
+        <h5>Desarrollada por SoftVitam-2023<br>Ministerio de Trabajo de Costa Rica</h5>
+    </footer>
+</body>
+</html>

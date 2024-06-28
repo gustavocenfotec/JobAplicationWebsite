@@ -1,0 +1,52 @@
+/* Estilos generales para todos los elementos */
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para el encabezado */
+
+header {
+    padding: 1%;
+    color: black;
+    text-align: center;
+    width: 42%;
+    height: 75px;
+    background-color: rgb(127, 218, 137);
+    margin: 2%;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+    
+}
+
+/* Estilos para el cuerpo del documento */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(230, 249, 157);
+}
+
+/* Estilos para el elemento <main> */
+
+main{
+    padding: 2%;
+    background-color: rgb(127, 218, 137);
+    width: 40%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+}
+
+/* Estilos para los elementos <div> */
+
+div{
+    width: 100%;
+    height: 100%;
+}

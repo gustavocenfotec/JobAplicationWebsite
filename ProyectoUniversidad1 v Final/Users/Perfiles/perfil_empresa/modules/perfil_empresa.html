@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Empresa</title>
+    <link rel="stylesheet" href="perfil_empresa.css">
+    <script type="module" src="perfil_empresa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Perfil Empresarial</title>
+</head>
+
+<body>
+    <main>
+        <!-- Se crea un section que almacene FotoEmpresa table y descripcion. -->
+        <section class="InformacionEmpresa">
+            <section class="FotoEmpresa"> <!-- Section que almacena la foto de perfil de la empresa. -->
+                <img id="imagenEmpresa"  alt="User" height="100%" width="100%"> <!-- Foto de perfil de la empresa. -->
+            </section>
+
+            <table> <!-- Tabla que almacena todos los inputs necesarios para actualizar la información del perfil de la empresa.  -->
+                <tr>
+                    <td><small>Nombre de la empresa</small></td>
+                    <td><input id="Nombre" type="text" value="Empresa"></td> <!-- Input que actualizar el nombre de la empresa.  -->
+                </tr>
+                <tr>
+                    <td><small>Breve descripcion de la Empresa</small></td>
+                    <td> <input id="descripcion" type="text" placeholder="Descripción de la Empresa"></td> <!-- Input que actualizar la descripcion de la empresa.  -->
+                <tr>
+                    <td><a id="sitioWebLink" href="">Sitio Web</a></td>
+                    <td><input id="sitioWeb" type="text" placeholder="https://example.com"></td> <!-- Input que actualizar el link que dirige al sitio web de la empresa.  -->
+                </tr>
+                <tr>
+                    <td><small>Contraseña</small></td>
+                    <td><input id="Contraseña" type="password" value="" placeholder="***********"></td> <!-- Input que actualizar la contraseña de la empresa.  -->
+                </tr>
+                <tr>
+                    <td><small>Perfil</small></td>
+                    <td>
+                        <input type="file" id="imagenInput" accept="image/*" style="display: none;"> <!-- Input que recibe un archivo de tipo imagen.  -->
+                        <button id = "SeleccionarImagen"></button> <!-- Boton que activa el input de seleccion de imagen.  -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><small>Guardar Cambios</small></td>
+                    <td><button id ="GuardarCambios"></button></td> <!-- Boton que guarda toda la informacion ingresada anteriormente. -->
+                </tr>
+            </table>
+
+            <section class="descripcion"> <!-- Seccion que almacena toda la descripcion de la empresa. -->
+                <p>Descripción: </p>  <!-- Titulo. -->
+                <p id="descripcionGuardar"></p> <!-- Descripcion. -->
+            </section>
+        </section>
+        <section class="Empresa"> <!--Seccion que almacena informacion de la empresa como aplicaciones, publicaciones y puestos disponibles -->
+            <section class="Aplicaciones">
+
+            </section>
+            <section class="Publicaciones">
+
+            </section>
+            <section class="PuestosDisponibles">
+            </section>
+        </section>
+    </main>
+</body>

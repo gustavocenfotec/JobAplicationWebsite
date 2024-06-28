@@ -1,0 +1,61 @@
+/* Se declara  la fuente que se usara durante todo el documento*/
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* El html tiene un color de fondo amarillo verdoso */
+  html{
+      background-color: rgb(4, 17, 34);
+  }
+  
+  /* El body estara completamente centrado, un valor de margen por arriba
+  un padding, un color de fondo verde solido y un borde redondo de color
+  negro */
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15%;
+      padding: 20px;
+      background-color: rgb(37, 144, 115);
+      border-radius: 50px;
+      border: 2px solid rgb(0, 0, 0);
+  }
+  
+  /* La seccion se mostrara en forma de columna, con un margen a la derecha,
+  y estara alineado al centro */
+  section{
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      text-align: center;
+  }
+  
+  /* El aside se pondra en forma de columna, con un valor de padding, un margen
+  a la izquierda, un color de fondo verde solido y un borde redondo de color
+  negro */
+  aside{
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      margin-left: 20px;
+      background-color: rgb(37, 200, 115);
+      border-radius: 15px;
+      border: 2px solid rgb(0, 0, 0);
+  }
+  
+  /* Todos los input bajo el form con id de login tendran fondo amarillo verdoso y un borde redondo */
+  #login input{
+      background-color: rgb(230, 249, 157);
+      border-radius: 20px;
+  }
+  
+  /* El boton tendra un color de fondo verde pastel, con valores de margen por arriba y abajo y borde redondo */
+  button{
+      background-color: rgb(230, 249, 157);
+      width: 70px;
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+  }

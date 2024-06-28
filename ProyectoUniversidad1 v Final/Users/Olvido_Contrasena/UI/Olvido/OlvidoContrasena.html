@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="OlvidoContrasena.css">
+    <!-- Comando para poder utilizar el axios en el html -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <!-- Se vincula el archivo CSS externo -->
+     <script src="Olvido_controller.js" type="module"></script>
+    <title>Olvido Contraseña</title>
+    </head>
+    <body>
+        <section>
+            <h2>Olvido de Contraseña</h2>
+            <h4>Si recordo su contraseña por favor volver al <a href="/ProyectoUniversidad1 v Final/Users/Login/UI/modules/login.html">Login</a> </h4>
+        </section>
+        <!-- formulario por medio de id para el funcionamiento del js y su verificacion -->
+            <form id="olvido_contrasena">
+                <h4>Correo electrónico</h4>
+                <input type="email" id="correo" name="correo" placeholder="correo">
+                <button type="submit">Envio de Contraseña</button>
+            </form>
+    </body>
+</html>

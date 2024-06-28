@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="registro.js"></script>
+    <title>Registro</title>
+</head>
+
+<!-- Se agrega la funcion onLoadComplete para el body, lo cual permitira la manipulacion de sus
+    contenidos -->
+
+<body>
+
+    <!-- El encabezado le indica al usuario proceder al registro de su cuenta -->
+    <header>
+        <h1>REGISTRESE AHORA</h1>
+    </header>
+    <main id="main1" class="main1">
+
+        <!-- En esta primera seccion se permite ingresar la informcaion de la cuenta -->
+        <section class="regUsuario">
+            <form id="regUser" class="regUser">
+
+                <!-- Aqui se ingresa la informacion de correo, contraseña y una doble confirmacion de contraseña -->
+                <div class="CyP">
+                    <h3>Correo Electrónico</h3>
+                    <input class="boxUsuario" name="Correo" type="email" placeholder="demostracion@gmail.com"
+                        id="Correo">
+                    <small id="CorreoError"></small>
+                    <h3>Crear contraseña <br> (no mayor a 12 caracteres y sin caracteres especiales)</h3>
+                    <input class="boxUsuario" name="password" type="password" placeholder="********" id="password"
+                        maxlength="12">
+                    <h3>Confirme la contraseña</h3>
+                    <input class="boxUsuario" name="passwordV2" type="password" placeholder="********" id="passwordV2"
+                        maxlength="12">
+                    <small id="ContraseñaError"></small>
+                    <h3 id="CambioEU">Nombres</h3>
+                    <input class="boxUsuario" name="Nombres" type="text" id="Nombres">
+
+                    <!-- Aqui se mostrara el error y se mostrara que falta en el ingreso de informacion -->
+                    <small id="NombreError"></small>
+                </div>
+
+
+                <div class="NyA">
+                    <!-- Aqui se da un espacio para ingresar los apellidos -->
+                    <h3>Apellidos</h3>
+                    <input class="boxUsuario2" name="Apellidos" type="text" id="Apellidos">
+                    <small id="ApellidoError"></small>
+                </div>
+            </form>
+        </section>
+        <section class="regDetalles">
+            <form id="regDetails">
+                <!-- Aqui se dan botones para escoger el tipo de registro, ya sea empresa o usuario -->
+                <div class="TipoC">
+                    <h3>Seleccione tipo de Cuenta</h3>
+                    <input class="boxCuenta" type="radio" name="Cuenta" value="Usuario" id="Usuario">
+                    <label class="Registro" for="Usuario">Usuario</label>
+
+                    <input class="boxCuenta" type="radio" name="Cuenta" value="Empresa" id="Empresa">
+                    <label class="Registro" for="Empresa">Empresa</label>
+                    <p id="CuentaTipo"></p>
+                </div>
+
+                <!-- Aqui se selecciona el genero para la cuenta de usuario -->
+                <div class="Genero">
+                    <h3>Añadir un género (opcional)</h3>
+                    <input class="boxCuenta" type="radio" name="Genero" value="Mujer" id="mujerForm">
+                    <label class="Registro" for="mujerForm">Mujer</label>
+
+                    <input class="boxCuenta" type="radio" name="Genero" value="Hombre" id="hombreForm">
+                    <label class="Registro" for="hombreForm">Hombre</label>
+
+                    <input class="boxCuenta" type="radio" name="Genero" value="Otros" id="otrosForm">
+                    <label class="Registro" for="otrosForm">Otro</label>
+                    <p id="ErrorGenero"></p>
+                </div>
+            </form>
+            <div class="text">
+                <!-- Se informa al usuario para que eventualmente suba una foto y un curriculum en la pagina de perfil -->
+                <h4 id="Instrucciones">(El usuario deberá agregar una foto de perfil y dar curriculum en la
+                    configuración de perfil)</h4>
+            </div>
+            <div class="buttonBox">
+                <!-- En este boton de permite al usuario ir directo a la pagina de login en caso de ya tener una cuenta registrada -->
+                <p>Si ya tiene una cuenta haga click <a href="/ProyectoUniversidad1 v Final/Users/Login/UI/modules/login.html">aquí</a></p>
+                <button id="registroButton" type="button">Registro</button>
+
+            </div>
+        </section>
+
+    </main>
+    <main id="main2" class="main2">
+
+        <!-- Se notifica el registro exitoso de la cuenta y se da la opcion de ir directo a la pantalla de login -->
+        <h1>¡Cuenta Registrada!</h1>
+        <a href="/ProyectoUniversidad1 v Final/Users/Login/UI/modules/login.html"><button>
+                <h1>Log In</h1>
+            </button></a>
+    </main>
+
+    <!-- Se agrega un footer con informacion de la empresa -->
+    <footer>
+        <p>Desarrollada por SoftVitam - 2023<br>Ministerio de Trabajo de Costa Rica</p>
+    </footer>
+</body>
+
+</html>

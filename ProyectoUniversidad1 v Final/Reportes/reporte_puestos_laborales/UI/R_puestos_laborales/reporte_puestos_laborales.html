@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="reporte_invitaciones_controller.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Se vincula el archivo JavaScript externo -->
+    <title>Reporte Aplicaciones a Puestos Laborales</title>
+    <link rel="stylesheet" href="reporte_puestos_laborales.css" />
+    <!-- Se vincula el archivo CSS externo -->
+  </head>
+  <body>
+    <!-- Se llama a la funciÃ³n onLoadComplete() cuando el cuerpo del documento se carga -->
+
+    <!-- Encabezado -->
+    <header>
+      <h2>Reporte de Estado de Aplicaciones</h2>
+    </header>
+
+    <nav>
+      <form id="filter">
+          <label>Encontrar para editar: </label>
+          <input type="text" id="finder" placeholder="Puesto de aplicante">
+          <button type="submit" id="trigger">Buscar</button>
+      </form>
+      <table id="tabla_puestos_laborales_encontrados">
+        <thead>
+          <tr>
+            <th>Responsable</th>
+            <th>Usuario que Aplicó</th>
+            <th>Puesto</th>
+            <th>Aplicación Recibida</th>
+            <th>Aplicación en Revisión</th>
+            <th>Aprobada</th>
+            <th>Rechazada</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas de datos -->
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+  </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <table id="tabla_puestos_laborales">
+          <thead>
+            <tr>
+              <th>Responsable</th>
+              <th>Usuario que Aplicó</th>
+              <th>Puesto</th>
+              <th>Aplicación Recibida</th>
+              <th>Aplicación en Revisión</th>
+              <th>Aprobada</th>
+              <th>Rechazada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de datos -->
+            <tr>
+              <td>demoREclutador1@gmail.com</td>
+              <td>demoUsuario1@gmail.com</td>
+              <td>Ejemplo_Puesto_1</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>demoREclutador2@gmail.com</td>
+              <td>demoUsuario2@gmail.com</td>
+              <td>Ejemplo_Puesto_2</td>
+              <td>""</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>demoManager2@gmail.com</td>
+              <td>demoUsuario3@gmail.com</td>
+              <td>Ejemplo_Puesto_3</td>
+              <td>""</td>
+              <td>""</td>
+              <td>""</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>demoREclutador2@gmail.com</td>
+              <td>demoUsuario4@gmail.com</td>
+              <td>Ejemplo_Puesto_4</td>
+              <td>""</td>
+              <td>""</td>
+              <td>""</td>
+              <td>X</td>
+            </tr>
+          </tbody>
+        </table>
+    </main>
+  </body>
+</html>

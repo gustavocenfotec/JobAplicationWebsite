@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte de Estado de Aplicación</title>
+    <link rel="stylesheet" href="reporte_aplicacion_usuario_final.css" />
+     <!-- Comando para poder utilizar el axios en el html -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Se vincula el archivo CSS externo -->
+    <script src="reporte_usuario_controller.js" type="module"></script>
+    <!-- Se vincula el archivo JavaScript externo -->
+  </head>
+
+  <body>
+    <!-- Se llama a la funciÃ³n onLoadComplete() cuando el cuerpo del documento se carga -->
+
+    <!-- Encabezado -->
+    <header>
+      <h1>Reporte de Estado de Aplicación</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <form id="aplicaciones_estados">
+        <table id="reporte_aplicacion_usuario">
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Puesto</th>
+              <th>Aplicación Recibida</th>
+              <th>Aplicación en Revision</th>
+              <th>Aprobada</th>
+              <th>Rechazada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de datos -->
+            <tr>
+              <td>Nombre_Empresa1</td>
+              <td>Ejemplo_Puesto_1</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>Nombre_Empresa1</td>
+              <td>Ejemplo_Puesto_2</td>
+              <td>""</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>Nombre_Empresa1</td>
+              <td>Ejemplo_Puesto_3</td>
+              <td>""</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>Nombre_Empresa1</td>
+              <td>Ejemplo_Puesto_4</td>
+              <td>""</td>
+              <td>""</td>
+              <td>""</td>
+              <td>X</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>

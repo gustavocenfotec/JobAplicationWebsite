@@ -1,0 +1,77 @@
+/* Estilos generales para todos los elementos */
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+/* Estilos para el elemento html */
+html{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+body{
+    background-color:rgb(4, 17, 34);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+/* Estilos para el encabezado */
+header{
+    background-color: #7FDA89;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para el elemento main */
+main{
+    background-color: #7FDA89;
+    width: 100%;
+
+}
+
+/* Estilos para las tablas */
+table{
+    background-color:white;
+    margin: 20px;
+    border:2px solid black;
+}
+
+/* Estilos para las celdas de encabezado */
+th{
+    background-color: #1c7a88;
+    border:2px solid black;
+    text-align: center;
+}
+
+/* Estilos para las celdas de datos */
+td{
+    border:2px solid black;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilos para los botones */
+button{
+    background-color: white;
+    color: black;
+    float: right;
+}
+
+/* Estilos para los botones en las celdas de encabezado */
+th button{
+    height: 80px;
+    width: 300px;
+    background-color: #7FDA89;
+}
+
+/* Estilos para los campos de entrada */
+input{
+    width: 99%;
+    height: 99%;
+    background-color:#E6F99D;
+}

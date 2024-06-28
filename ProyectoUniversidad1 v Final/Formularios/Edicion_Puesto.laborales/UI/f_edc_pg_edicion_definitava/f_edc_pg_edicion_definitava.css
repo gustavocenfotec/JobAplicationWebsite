@@ -1,0 +1,83 @@
+/* Se declara  la fuente que se usara durante todo el documento*/
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  /* El html tiene un valor de ancho y altura */
+html{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(4, 17, 34);
+}
+
+/* El body se mostrara en fila y tendra valores de ancho y altura */
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* El section tendra un color de fondo, se alineara a la izquierda, tendra color blanco y
+un color de fondo verde solido, a su vez tendra valores de ancho, altura y un padding
+a la izquierda */
+section{
+    text-align:left;
+    background-color: #259073;
+    justify-content: space-between;
+    color: white;
+    width: 49%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+/* El main tiene colores de fondo y una fuente negra, a su vez tendra valores de ancho altura y padding a la izquierda*/
+main{
+background-color: rgb(4, 17, 34);
+color: white    ;
+width: 49%;
+height: 100%;
+padding-left: 20px;
+}
+
+fieldset{
+    border: none;
+}
+
+/* Los div tendran un margen por arriba */
+div{
+    margin-top: 20px;
+}
+
+/* El boton tendra un color de fondo verde solido y un color de fuente blanco */
+button{
+    background-color: #259073;
+    color: white;
+}
+
+/* Estilos para las tablas */
+table{
+    color: black;
+    background-color:white;
+    margin: 20px;
+    border:2px solid black;
+}
+
+/* Estilos para las celdas de encabezado */
+th{
+    background-color: #1c7a88;
+    border:2px solid black;
+    text-align: center;
+}
+
+/* Estilos para las celdas de datos */
+td{
+    border:2px solid black;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+}
+
+#formulario_laboral input{
+    background-color:rgb(230, 249, 157);;
+}

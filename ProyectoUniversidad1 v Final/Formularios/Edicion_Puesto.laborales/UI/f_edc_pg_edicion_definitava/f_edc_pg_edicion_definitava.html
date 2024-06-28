@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f_edc_pg_edicion_definitava.css">
+    <!-- Comando para poder utilizar el axios en el html -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Se vincula el archivo CSS externo -->
+    <script src="f_edc_pg_edicion_definitava.controller.js" type="module"></script>
+    <title>Editor de Puestos Laborales</title>
+</head>
+
+<body>
+    <!-- Se pone texto de encabezado en la parte izquierda del formulario donde se muestra el titulo -->
+        <section>
+        <h1>Puesto de Trabajo a Editar</h1>
+        <table id="Trabajos">
+            <thead>
+                <!-- Fila de encabezado -->
+                <tr>
+                    <!-- Columna: Puesto Laboral -->
+                    <th>Puesto Laboral</th>
+                    <!-- Columna: Rango Salarial -->
+                    <th>Rango Salarial</th>
+                    <!-- Columna: Requisitos Mínimos -->
+                    <th>Requisitos Mínimos</th>
+                    <!-- Columna: Atributos Deseables -->
+                    <th>Atributos Deseables</th>
+                    <th>Eliminar Puesto</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre_Empresa1</td>
+                    <td>Ejemplo_Puesto_1</td>
+                    <td>X</td>
+                    <td>""</td>
+
+                  </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--En la parte derecha se dan espacios para personalizar lo que se mostrara en la oferta laboralr-->
+        <main>
+            <form id="formulario_laboral">
+                <h4>Nombre de la Posición</h4>
+                <fieldset>
+                    <input type="text" name="puesto_laboral" id="puesto_laboral" placeholder="Nombre del Puesto">
+                </fieldset>
+                <h4>Rango Salarial</h4>
+                <fieldset>
+                    <input type="number" name="rango_salarial" id="rango_salarial" placeholder="Rango Salarial">
+                </fieldset>
+                <h4>Requisitos Mínimos</h4>
+                <fieldset>
+                    <input type="text" name="requisitos_minimo" id="requisitos_minimo" placeholder="Resiquitos Mínimos">
+                </fieldset>
+                <h4>Atributos Deseables</h4>
+                <fieldset>
+                    <input type="text" name="atributos_deseables" id="atributos_deseables" placeholder="Atributos Deseables">
+                </fieldset>
+                <!-- Finalmente se da la un boton que permite enviar a verificacion la informacion ingresada previamente -->
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+</body>
+</html>

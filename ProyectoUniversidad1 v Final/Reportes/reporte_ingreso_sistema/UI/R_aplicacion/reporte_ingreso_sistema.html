@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reporte_ingreso_sistema.css" />
+    <script src="reporte_ingreso_sistema_controller.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Titulo para Identificacion de la pagina -->
+    <title>Reporte de Ingreso al Sistema</title>
+
+    <!-- Llamado del css -->
+     <!-- Comando para poder utilizar el axios en el html -->
+     <!-- <link rel="stylesheet" href="reporte_ingreso_sistema.css" />-->
+    <!--  Se vincula el archivo CSS externo -->
+    <!-- <script src="reporte_ingreso_sistema_controller.js" type="module"></script> -->
+    <!-- Se vincula el archivo JavaScript externo -->
+</head>
+<!-- Llamado de la funcion onLoadComplete para funcionabilidad del js -->
+<body>
+    <header>
+        <!-- Descripcion de la Informacion de la Pagina -->
+        <h2>Reporte de Ingresos al Sistema</h2>
+    </header>
+    <nav>
+    <form id="filter">
+        <label>Encontrar ingreso: </label>
+        <input type="text" id="finder" placeholder="Puesto o correo de aplicante">
+        <button type="submit" id="trigger">Buscar</button>
+    </form>
+    <table id="tabla_ingresosEncontrados">
+        <thead>
+            <tr>
+                <th>Usuario </th>
+                <th>Ingreso al Sistema</th>
+                <th>Salida del Sistema</th>
+                <th>Fecha de Ingreso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    </nav>
+    <main>
+        <!-- Designacion del nombre de la tabla para realizar cambios con la actualizacion del obejto descrito -->
+        <table id="tabla_ingresos">
+            <thead>
+                <tr>
+                    <th>Usuario </th>
+                    <th>Ingreso al Sistema</th>
+                    <th>Salida del Sistema</th>
+                    <th>Fecha de Ingreso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>demoAdministrador1@gmail.com</td>
+                    <td>9:00</td>
+                    <td>9:30</td>
+                    <td>28-06-2023</td>
+                </tr>
+                <tr>
+                    <td>demoManager1@gmail.com</td>
+                    <td>14:00</td>
+                    <td>14:30</td>
+                    <td>01-07-2023</td>
+                </tr>
+                <tr>
+                    <td>demoManager2@gmail.com</td>
+                    <td>16:20</td>
+                    <td>16:30</td>
+                    <td>29-06-2023</td>
+                </tr>
+                <tr>
+                    <td>demoREclutador1@gmail.com</td>
+                    <td>15:15</td>
+                    <td>15:30</td>
+                    <td>30-06-2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+        
+</body>
+</html>

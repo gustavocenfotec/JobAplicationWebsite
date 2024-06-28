@@ -1,0 +1,110 @@
+/* Estilos globales para todos los elementos */
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para el cuerpo del documento */
+body{
+    background-color:rgb(230, 249, 157);
+  }
+
+  /* Estilos para el encabezado */
+  header{
+    font-size:26px;
+    color:black;
+    font-weight:bold;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  
+  
+/* Estilos para el formulario de la encuesta */
+  #formulario_encuesta{
+    background-color:rgb(127, 218, 137);
+    max-width:70%;
+    margin:auto;
+    padding:0;
+    border-radius:15px;
+  }
+  
+  /* Estilos para la descripción del formulario */
+  #description{
+    text-align:center;
+    font-size:16px;
+    padding-top:17px;
+    font-weight:bold;
+  }
+  
+  /* Estilos para los fieldsets en el formulario */
+  .fieldset{
+    border-width:0;
+    padding-top:1%;
+  }
+  
+  /* Estilos para los subgrupos en el formulario */
+  .sub-group{
+    position:relative;
+    right:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:1%;
+  }
+
+  /* Estilos para las etiquetas de texto a la izquierda en el formulario */
+  label.left{
+    width:30%;
+    padding-right:4%;
+    text-align:right;
+  }
+  
+  /* Estilos para los elementos a la derecha en el formulario */
+  .right{
+    width:30%;
+  }
+  
+  /* Estilos para los campos de entrada en el formulario */
+  .input-field{
+    height:20px;
+    padding:5px;
+    border: 1px solid #c0c0c0;
+    background-color: rgb(200, 233, 142);
+    border-radius: 2px;
+  }
+  
+  /* Estilos para el campo de selección desplegable en el formulario */
+  #dropdown{
+    height:30px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+  
+  /* Estilos para los elementos h2 en el formulario */
+  h2{
+    position:relative;
+    bottom:8px;
+    font-size:16px;
+    text-align:center;
+    font-weight:bold;
+  }
+  
+  /* Estilos para el área de comentarios en el formulario */
+  .commentbox{
+    text-align:center;
+  }
+  
+  
+/* Estilos para el campo de texto grande en el formulario */
+  textarea{
+    width:65%;
+    border-radius:4px;
+    background-color: rgb(200, 233, 142);
+  }
+  
+  /* Estilos para el botón de envío en el formulario */
+  #submit{
+    background:rgb(37, 144, 115);
+    border-radius:4px;
+    font-size:23px;
+  }

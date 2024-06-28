@@ -1,0 +1,145 @@
+/* Estilos CSS para el formulario de invitación */
+
+/* Estilos generales */
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Fuente para todo el documento */
+  color: black; /* Color de texto predeterminado */
+}
+
+html {
+  height: 100vh; /* Altura del documento HTML al 100% de la ventana gráfica */
+  width: 100vw; /* Ancho del documento HTML al 100% de la ventana gráfica */
+  box-sizing: border-box; /* El tamaño total del elemento incluye el relleno y el borde, sin afectar el diseño */
+}
+
+body {
+  background-color: rgb(4, 17, 34); /* Color de fondo del cuerpo */
+  display: flex; /* Uso de flexbox para el diseño del cuerpo */
+  flex-direction: column; /* Dirección de apilamiento vertical de los elementos */
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #259073;
+    margin: 30px;
+    text-align: center;
+}
+
+header h1 {
+  text-align: center; /* Alineación del título del encabezado en el centro */
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: #259073; /* Color de fondo del formulario */
+  padding: 20px; /* Espacio de relleno alrededor del formulario */
+  height: 60%; /* Altura del formulario al 60% de su elemento contenedor */
+  margin: 30px;
+}
+
+/* Estilos para la sección de correo electrónico */
+section {
+  background-color: #259073; /* Color de fondo del formulario */
+  display: flex; /* Uso de flexbox para el diseño de la sección */
+  flex-direction: row; /* Dirección de apilamiento horizontal de los elementos */
+  align-content: center; /* Alineación vertical del contenido */
+  
+}
+
+section p {
+  margin-right: 20px; /* Margen derecho del párrafo de la sección */
+  background-color: #7fda89; /* Color de fondo del párrafo de la sección */
+  height: 35px; /* Altura del párrafo de la sección */
+  width: 325px;
+  font-size: 20px;
+}
+
+section input {
+  margin-top: 15px; /* Margen superior del campo de entrada de la sección */
+  height: 35px; /* Altura del campo de entrada de la sección */
+  width: 1400px; /* Ancho del campo de entrada de la sección */
+  font-size: 20px;
+  background-color:#E6F99D;
+  border-radius: 30px; /* Radio de borde del botón de envío */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  overflow: hidden; /* Ocultar contenido desbordado */
+  background-color: #333; /* Color de fondo de la barra de navegación */
+}
+
+.navbar a {
+  float: left; /* Los elementos flotan a la izquierda */
+  font-size: 16px; /* Tamaño de fuente de los enlaces de la barra de navegación */
+  color: black; /* Color de texto de los enlaces de la barra de navegación */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 14px 16px; /* Espacio de relleno del enlace de la barra de navegación */
+  text-decoration: none; /* Sin decoración de texto en los enlaces */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  float: left; /* El menú desplegable flota a la izquierda */
+  overflow: hidden; /* Ocultar contenido desbordado */
+  font-size: 20px;
+}
+
+.dropdown .dropbtn {
+  background-color: #7fda89; /* Color de fondo del botón desplegable */
+  font-size: 16px; /* Tamaño de fuente del botón desplegable */
+  border-radius: 30px; /* Radio de borde del botón de envío */
+  outline: none; /* Sin contorno en el botón desplegable */
+  color: black; /* Color de texto del botón desplegable */
+  padding: 14px 16px; /* Espacio de relleno del botón desplegable */
+  font-family: inherit; /* Utiliza la fuente heredada */
+  margin: 0; /* Sin margen en el botón desplegable */
+  font-size: 20px;
+}
+
+/* Estilos al pasar el cursor sobre los enlaces de la barra de navegación */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #1c7a88; /* Color de fondo al pasar el cursor sobre los enlaces de la barra de navegación */
+}
+
+/* Estilos para el contenido del menú desplegable */
+.dropdown-content {
+  display: none; /* Ocultar el contenido del menú desplegable por defecto */
+  position: absolute; /* Posicionamiento absoluto del contenido del menú desplegable */
+  background-color: #7fda89; /* Color de fondo del contenido del menú desplegable */
+  min-width: 160px; /* Ancho mínimo del contenido del menú desplegable */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra del contenido del menú desplegable */
+  z-index: 1; /* Índice z del contenido del menú desplegable */
+}
+
+.dropdown-content a {
+  float: none; /* Los enlaces se muestran como bloques */
+  color: black; /* Color de texto de los enlaces del contenido del menú desplegable */
+  padding: 12px 16px; /* Espacio de relleno de los enlaces del contenido del menú desplegable */
+  text-decoration: none; /* Sin decoración de texto en los enlaces del contenido del menú desplegable */
+  display: block; /* Los enlaces se muestran como bloques */
+  text-align: left; /* Alineación del texto a la izquierda en los enlaces del contenido del menú desplegable */
+}
+
+.dropdown-content a:hover {
+  background-color: #7fda89; /* Color de fondo al pasar el cursor sobre los enlaces del contenido del menú desplegable */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Mostrar el contenido del menú desplegable al pasar el cursor sobre él */
+}
+
+/* Estilos para el botón de envío */
+.submit {
+  float: right; /* El botón de envío flota a la derecha */
+}
+
+.submit button {
+  background-color: #7fda89; /* Color de fondo del botón de envío */
+  color: black; /* Color de texto del botón de envío */
+  border-radius: 30px; /* Radio de borde del botón de envío */
+  margin-right: 900px; /* Margen derecho del botón de envío */
+  padding: 12px 16px;
+  font-size: 20px;
+}

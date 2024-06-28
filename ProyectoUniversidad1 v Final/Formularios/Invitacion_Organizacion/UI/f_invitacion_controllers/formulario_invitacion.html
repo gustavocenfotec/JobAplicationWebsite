@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario_invitacion.css" />
+    <!-- Se vincula el archivo CSS externo -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="formulario_invitacion_controller.js"></script>
+    <!-- Se vincula el archivo JavaScript externo -->
+    <title>Formulario de Invitación</title>
+  </head>
+  <body>
+
+    <!-- Encabezado -->
+    <header>
+      <h1>Formulario de Invitación</h1>
+    </header>
+
+    <!-- Formulario -->
+    <form id="invitacion">
+      <section>
+        <p>Correo Electrónico de Usuario Invitado</p>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="DemoDeCorreo@gmail.com"
+        />
+      </section>
+      <nav>
+        <!-- Menú desplegable -->
+        <div class="dropdown">
+          <button class="dropbtn">Que se desea?</button>
+          <div class="dropdown-content">
+            <input type="radio" id="administrador" name="name" value="adm" />
+            <label for="administrador">Administrador</label><br />
+            <input type="radio" id="manager" name="name" value="manager" />
+            <label for="manager">Manager</label><br />
+            <input
+              type="radio"
+              id="reclutador"
+              name="name"
+              value="reclutador"
+            />
+            <label for="recruiter">Reclutador</label><br />
+          </div>
+        </div>
+      </nav>
+      <div class="submit">
+        <button type="submit">Invite</button>
+      </div>
+    </form>
+  </body>
+</html>

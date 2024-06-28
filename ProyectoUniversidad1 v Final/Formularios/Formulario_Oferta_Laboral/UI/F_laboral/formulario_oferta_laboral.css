@@ -1,0 +1,74 @@
+/* Se declara  la fuente que se usara durante todo el documento*/
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  /* El html tiene un valor de ancho y altura */
+html{
+    height: 100vh;
+    background-color: rgb(4, 17, 34);
+}
+
+/* El body se mostrara en fila y tendra valores de ancho y altura */
+body {
+    display: flex;
+    flex-direction: row;
+    height: 99%;
+    width: 99%;
+}
+
+/* El section tendra un color de fondo, se alineara a la izquierda, tendra color blanco y
+un color de fondo verde solido, a su vez tendra valores de ancho, altura y un padding
+a la izquierda */
+section{
+    text-align:left;
+    background-color: #259073;
+    justify-content: space-between;
+    color: white;
+    width: 49%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+/* El main tiene colores de fondo y una fuente negra, a su vez tendra valores de ancho altura y padding a la izquierda*/
+main{
+    background-color: rgb(4, 17, 34);
+color: white;
+width: 49%;
+height: 100%;
+padding-left: 20px;
+}
+
+fieldset{
+    border: none;
+}
+
+input{
+    background-color:rgb(230, 249, 157);
+    height: 24px;
+    font-size: 18px;
+}
+
+/* Los div tendran un margen por arriba */
+div{
+    margin-top: 20px;
+}
+
+/* El boton tendra un color de fondo verde solido y un color de fuente blanco */
+button{
+    background-color: #259073;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 15px;
+    height: 50px;
+    width:100px;
+}

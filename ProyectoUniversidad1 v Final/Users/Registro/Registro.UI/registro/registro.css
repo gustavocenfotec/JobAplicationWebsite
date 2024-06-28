@@ -1,0 +1,231 @@
+/*Se declaran los atributos que se utilizaran durante todo el documento como color y fuente*/
+* {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*El body se mostrara en forma de columna y estara alineado al centro. Tendra un fondo verde claro y se le dan valores de ancho y alto*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(4, 17, 34);
+}
+
+/*Al header se le da un padding, y se reitera el color negro, junto a un fondo verde pastel. Se le asigna un margen y un borde redondo de
+color negro. Tendra valores de margen, ancho y largo */
+header {
+    padding: 1%;
+    color: black;
+    text-align: center;
+    width: 72%;
+    height: 75px;
+    background-color: rgb(127, 218, 137);
+    margin: 2%;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+}
+
+/*Los parrafos en main tendran un color rojo*/
+.main1 p {
+    color: red;
+}
+
+/*Los small en main tendran un color rojo*/
+.main1 small {
+    color: red;
+}
+
+/*main1 tendra un padding, un color de fondo verde pastel, valores de ancho y largo, se dara espacio entre el contenido del
+mismo, estara centrado, y tendra un borde redondo de color azul oscuro*/
+.main1 {
+    padding: 2%;
+    background-color: rgb(127, 218, 137);
+    width: 70%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+}
+
+/*El main2 estara centrado, con un color de fondo verde pastel, factores de ancho y alto, y un borde redondo de color azul oscuro*/
+.main2 {
+    text-align: center;
+    display: flex;
+    padding: 2%;
+    background-color: rgb(127, 218, 137);
+    width: 70%;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+}
+
+/*los encabezados de main2 tendran un margen de inicio*/
+.main2 h1 {
+    margin-block-start: 7%;
+}
+
+/*Los botones en main 2 tiene un margen de inicio, factores de ancho y largo, un color de fondo verde claro, y un borde redondo de color
+azul oscuro.*/
+.main2 button {
+    margin-block-start: 2%;
+    height: 15%;
+    width: 15%;
+    background: rgb(200, 233, 142);
+    border-radius: 20px;
+    border: 2px solid rgb(4, 17, 34);
+}
+
+/*El formulario de registro de usuario tendra un factor de altura completo*/
+.regUser {
+    height: 100%;
+}
+
+/*el section tendra valor de altura y padding*/
+section {
+    padding: 1%;
+    width: 49%;
+}
+
+/*el registro de detalles tendra un factor de altura*/
+.regDetalles {
+    height: 90%;
+}
+
+/*El registro de usuario tendra una altura y a la derecha tendra un color azul oscuro*/
+.regUsuario {
+    height: 100%;
+    border-right: 3px solid rgb(4, 17, 34);
+}
+
+/*todo bajo la clase de boxUsuario tendra un fondo verde claro, factores de ancho, y un borde redondeado de color azul oscuro*/
+.boxUsuario {
+    background: rgb(200, 233, 142);
+    width: 95%;
+    border: 2px solid rgb(4, 17, 34);
+    border-radius: 20px;
+}
+
+/*todo bajo la clase de boxUsuario2 tendra un fondo verde claro, factores de ancho, y un borde redondeado de color azul oscuro*/
+.boxUsuario2 {
+    background: rgb(200, 233, 142);
+    width: 95%;
+    border: 2px solid rgb(4, 17, 34);
+    border-radius: 20px;
+}
+
+/*los label con clase registro dentro regUser se da un padding y un borde redondo de azul oscuro*/
+.regUser .Registro {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(4, 17, 34);
+}
+
+/*los label con clase registro dentro regDetalles se da un padding y un borde redondo de azul oscuro*/
+.regDetalles .Registro {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(4, 17, 34);
+}
+
+/*El box cuenta de regDetalles cuando sea checado tendra un color negro, color de fondo verde solido, y un borde negro*/
+.regDetalles .boxCuenta:checked+label {
+    background: rgb(37, 144, 115);
+    color: black;
+    border: 2px solid rgb(4, 17, 34);
+}
+/*El box cuenta de regDetalles cuando no sea checado tendra un color negro, color de fondo amarillo berdoso, y un borde negro*/
+.regDetalles .boxCuenta:not(:checked)+label {
+    background: rgb(200, 233, 142);
+    color: black;
+    border: 2px solid rgb(4, 17, 34);
+}
+
+/*el display del boton de seleccion de cuenta se deja con un display none*/
+.boxCuenta {
+    display: none;
+}
+
+/*Los botones deben tener un color de fondo, un padding y un borde redondeado de color azul oscuro*/
+.regDetalles button {
+    background: rgb(200, 233, 142);
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(4, 17, 34);
+}
+
+/*Ambas clases, tipoC y Genero tendran un valor de altura*/
+.TipoC .Genero {
+    height: 99px;
+}
+
+/*Un footer con margen, un color negro, un color de fondo verde pastel, estara centrado, tendra factores de ancho y altura
+y un borde redondeado de color azul oscuro*/
+footer {
+    margin: 2%;
+    color: black;
+    text-align: center;
+    width: 74%;
+    height: 75px;
+    background-color: rgb(127, 218, 137);
+    border-radius: 20px;
+    border: 3px solid black;
+}
+/*todo h3 dentro de la clase de regUsuario tendra un margen de bloque al inicio*/
+.regUsuario h3 {
+    margin-block-start: 0.2em;
+}
+/*/*todo h3 dentro de la clase de NyA tendra un margen de bloque al inicio*/
+.NyA h3 {
+    margin-block-start: 0.2em;
+}
+/*A la siguiente lista de clases se les dara un valor respectivo de altura*/
+.NyA {
+    margin-top: 30px;
+    height: 125px;
+}
+.CyP{
+    height: 300px;
+}
+.NyA {
+    height: 20%;
+}
+.CyP input{
+    height: 8.5%;
+}
+.NyA input {
+    height: 30%;
+}
+.text {
+    height: 30%;
+}
+/*La clase de buttonBox se acomodara con espacios entre si y se alineara hacia el end*/
+.buttonBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/*Todo parrafo dentro de buttonBox tendra color negro*/
+.buttonBox p {
+    color: black;
+}
+/*Todo ancla dentro de buttonbox tendra un color azul*/
+.buttonBox a {
+    color: rgb(6, 69, 173);
+}
+
+/*Todo placeholder en la pagina tendra color negro*/
+::placeholder {
+    color: black;
+}
+/*todo h3 dentro de la clase regUser tendra un valor de margen abajo*/
+.regUser h3 {
+    margin-bottom: 0.2%;
+}

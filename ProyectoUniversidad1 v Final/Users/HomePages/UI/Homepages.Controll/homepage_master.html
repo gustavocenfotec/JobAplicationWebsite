@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage_master.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="homepage_master_controller.js"></script>
+    <title>Homepage Maestro</title>
+</head>
+<body>
+    <!-- se escribe el titulo que encabeza la pagina -->
+    <header>
+        <h1>Ministerio de Trabajo y Seguridad Social (MTSS)</h1>
+    </header>
+    <nav>
+        <!-- un boton de logout -->
+    <button id="logout">LogOut</button>
+    </nav>
+    <!-- Se declara la primera mitad navegable de la pagina-->
+    <main>
+        <!-- Aqui se pone un espacio para la foto de perfil que podra ser agregada-->
+        <form id="encuentrosYa">
+            <label>Ingrese el correo de empresa a buscar:</label>
+            <input type="text" id="encontrador" placeholder="uncorreodeunaempresa@gmail.com">
+            <button type="submit" id="activador">Buscar</button>
+        </form>
+        <!--En la segunda mitad del main se muestra dos tablas que ponen la informacion de los puestos con aplicaciones-->
+        <div class="encontradas">
+            <table id="empresaFound">
+                <thead>
+                    <tr>
+                        <th>Nombre de Empresa</th>
+                        <th>Correo electrónico de la Empresa</th>
+                        <th>Eliminación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Data has passed yet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!--Aqui la segunda parte de la aplicacion web que contiene puestos que se encuentran
+        disponibles para el usuario en la bolsa de empleo-->
+    <section>
+        <div class="todas">
+            <p>Empresas</p>
+            <table id="empresasTodas">
+                <thead>
+                    <tr>
+                        <th>Nombre de Empresa</th>
+                        <th>Correo electrónico de la Empresa</th>
+                        <th>Eliminación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Data has passed yet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!--Finalmente tenemos un foooter con breve informacion de la aplicacion web-->
+    <footer>
+        <h5>Desarrollada por SoftVitam-2023<br>Ministerio de Trabajo de Costa Rica</h5>
+    </footer>
+</body>
+</html>

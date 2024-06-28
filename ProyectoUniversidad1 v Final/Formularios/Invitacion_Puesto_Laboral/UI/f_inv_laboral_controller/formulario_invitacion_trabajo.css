@@ -1,0 +1,77 @@
+* {
+  font-family: sans-serif;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: rgb(4, 17, 34);
+}
+
+/* Estilos para el documento HTML */
+html {
+  box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  background-color: rgb(4, 17, 34);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para el encabezado */
+header {
+  text-align: center;
+  background-color: rgb(37, 144, 115);
+  margin: 15px;
+}
+/* Estilos para el formulario */
+form {
+  margin: 10px;
+}
+
+/* Estilos para la secciÃ³n del formulario */
+section{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 144, 115);
+  margin: 15px;
+}
+
+input{
+  background-color: rgb(230, 249, 157);
+  border-radius: 20px;
+  margin-top: 5px;
+  margin: 10px;
+  height: 28px;
+  width: 900px;
+}
+
+/* Estilos para las tablas */
+table{
+background-color: white;
+margin: 20px;
+border:2px solid black;
+}
+
+/* Estilos para las celdas de encabezado */
+th{
+background-color: #1c7a88;
+border:2px solid black;
+    text-align: center;
+}
+
+/* Estilos para las celdas de datos */
+td{
+border:2px solid black;
+height: 80px;
+width: 300px;
+text-align: center;
+}
+
+button{
+background-color: rgb(230, 249, 157);
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}

@@ -1,0 +1,330 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Se declara  la fuente que se usara durante todo el documento*/
+
+html {
+    box-sizing: border-box;
+}
+
+/* Se declara la altura y anchura del html */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 17, 34);
+    margin: 15px;
+}
+
+/* El body se mostrara en direccion de columna y se declara un color de fondo con un margen */
+
+header {
+    text-align: center;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+/* El header tendra el texto alineado al centro junto a un color y margen */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+/* Un id interact contien los dropdown y permite separar el boton de .logout con fines de optimizar usabilidad */
+#interact {
+    display: flex;
+    flex-direction: row;
+}
+
+/* El nav sera mostrado en forma de fila con un color y un margen */
+
+.reporte .drop_reporte {
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+    padding: 10px 12px;
+    background-color: rgb(37, 200, 115);
+    margin: 3px;
+}
+
+/* Para el boton dropdown y todos los botones que despliega se da un tamaño de fuente,
+    borde y contorno nulo, color de fondo, color de letra, un padding y un margen */
+
+.reporte:hover .drop_reporte {
+    border-radius: 50px;
+    border: 3px solid rgb(37, 200, 115);
+    background-color: rgb(4, 17, 34);
+    color: rgb(217, 217, 217);
+}
+
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+.op_reporte {
+    display: none;
+    position: absolute;
+    background-color: rgb(37, 200, 115);
+    min-width: 160px;
+    z-index: 1;
+}
+
+/*Se tratan los atributos de los elementos del dropdown de reportes*/
+
+.op_reporte a {
+    float: none;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/*Se tratan atributos de los links de reportes*/
+
+.op_reporte a:hover {
+    background-color: rgb(4, 17, 34);
+    color: rgb(217, 217, 217);
+}
+
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+.reporte:hover .op_reporte {
+    display: block;
+}
+
+/* Se asigna un display de tipo bloque al boton de reporte y lo contenido en su dropdown*/
+
+.gestion .drop_gestion {
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+    padding: 10px 12px;
+    background-color: rgb(37, 200, 115);
+    font-family: inherit;
+    margin: 3px;
+}
+
+/* Para el boton dropdown y todos los botones que despliega se da un tamaño de fuente,
+    borde y contorno nulo, color de fondo, color de letra, un padding y un margen */
+
+.gestion:hover .drop_gestion {
+    border-radius: 50px;
+    border: 3px solid rgb(37, 200, 115);
+    background-color: rgb(4, 17, 34);
+    color: rgb(217, 217, 217);
+}
+
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+.op_gestion {
+    display: none;
+    position: absolute;
+    background-color: rgb(37, 200, 115);
+    min-width: 160px;
+    z-index: 1;
+}
+
+/*Se tratan los atributos de los elementos del dropdown de gestion*/
+
+.op_gestion a {
+    float: none;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/*Se tratan atributos de los links de gestion*/
+
+.op_gestion a:hover {
+    background-color: rgb(4, 17, 34);
+    color: rgb(217, 217, 217);
+}
+
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+.gestion:hover .op_gestion {
+    display: block;
+}
+
+/* Se asigna un display de tipo bloque al boton de reporte y lo contenido en su dropdown*/
+
+.logout {
+    font-size: 16px;
+    border-radius: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    outline: none;
+    height: auto;
+    color: rgb(255, 255, 255);
+    padding: 10px 12px;
+    background-color: rgb(255, 0, 0);
+    font-family: inherit;
+    margin: 3px;
+}
+
+/* Similar a los botones anteriores, se cambia a un color de fondo rojo que permite mayor
+    facilidad de diferencia para el usuario */
+
+.logout:hover {
+    color: rgb(255, 0, 0);
+    border-radius: 50px;
+    border: 3px solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+/* El section se mostrara en forma de fila */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/*El main se mostrara en forma de fila*/
+
+.perfil {
+    background-color: rgb(127, 218, 137);
+    width: 25%;
+    text-align: center;
+    margin: 15px;
+}
+
+/*La parte de informacion de perfil ocupara 25% del ancho del main y sus contenidos estaran en el centro*/
+
+#profile {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+/* Se ajustan propiedades de ancho y alto de la imagen junto un nivel de margen */
+
+.edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Los contenidos de la clase edit (nombre,apellido y un icono) se mostraran en fila y estaran centrados */
+
+#pencil {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+/* Se ajustan propiedades de ancho y alto del icono junto con un nivel de margen */
+
+.puestos {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(127, 218, 137);
+    width: 75%;
+    margin: 15px;
+}
+
+/* Las tablas de puestos se mostraran en forma de fila con un margen respectivo */
+
+#puesto_a,
+#puesto_b,
+#puesto_c,
+#puesto_d {
+    background-color: rgb(25, 25, 25);
+    margin: 5px;
+}
+
+/* Todas las tablas con informacion de puestos tienen un color de fondo y un margen respectivo*/
+
+tr {
+    background-color: rgb(37, 144, 115);
+    padding: 5px;
+}
+
+/* Las filas de la tabla tendran un color de fondo y un padding */
+
+td {
+    background-color: white;
+    color: black;
+    font-size: small;
+    padding: 5px;
+}
+
+/* Las celdas de datos en las tablas tendran una fuente pequeña, con color de fuente y fondo y con un
+    respectivo padding */
+
+td a {
+    float: none;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/*Se tratan atributos de las tablas*/
+
+td a:hover {
+    background-color: rgb(4, 17, 34);
+    color: rgb(217, 217, 217);
+}
+
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+.p_empresa {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(127, 218, 137);
+    width: 100%;
+    margin: 15px;
+}
+
+/* Las tablas de puestos se mostraran en forma de fila con un margen respectivo */
+
+#add {
+    width: 100px;
+    height: 90px;
+    margin-top: 45%;
+}
+
+/* El icono de agregar se le especifican altura, ancho y margen */
+
+footer {
+    text-align: center;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+/* Finalmente la informacion en el footer sera centrada y tendra un respectivo margen */
+
+
+#puesto_c{
+    background-color: rgb(25, 25, 25);
+    margin: 40px;
+    margin-right: 3px;
+    display: block;
+    overflow-y: auto;
+    height: 180px;
+}
+#puesto_a{
+    background-color: rgb(25, 25, 25);
+    margin: 40px;
+    margin-right: 3px;
+    display: block;
+    overflow-y: auto;
+    height: 230px;
+}

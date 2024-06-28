@@ -1,0 +1,57 @@
+/* Este fragmento de CSS aplica la regla de estilo a todos los elementos en el documento HTML. */
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estos estilos definen un encabezado con un ancho del 42% y una altura de 75 píxeles. Tiene un fondo de color verde (RGB 127, 218, 137),
+texto negro y está centrado en la página. Se aplican márgenes del 2% y un relleno del 1% alrededor del contenido. Además, se agrega un 
+borde sólido de 3 píxeles con esquinas redondeadas (radio de 20 píxeles) en un color azul oscuro (RGB 4, 17, 34). */
+
+header {
+    padding: 1%;
+    color: black;
+    text-align: center;
+    width: 42%;
+    height: 75px;
+    background-color: rgb(127, 218, 137);
+    margin: 2%;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+}
+
+/* Estos estilos configuran el cuerpo del documento como un contenedor flexible con elementos secundarios apilados verticalmente y centrados
+verticalmente. El fondo tiene un color verde claro y se ajusta a la altura completa del viewport. El margen se establece en cero para eliminar
+cualquier espacio adicional alrededor del cuerpo. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(230, 249, 157);
+}
+
+/* Estos estilos definen el aspecto del elemento <main>, incluyendo el tamaño, el color de fondo, el espaciado, las esquinas redondeadas y el borde.
+El contenido dentro de <main> se alinea y distribuye de manera uniforme. */
+
+main{
+    padding: 2%;
+    background-color: rgb(127, 218, 137);
+    width: 40%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid rgb(4, 17, 34);
+}
+
+/* En resumen, estos estilos hacen que todos los elementos <div> ocupen el 100% del ancho y la altura de su contenedor, lo que permite que se ajusten 
+al tamaño del contenedor sin especificar dimensiones fijas. */
+
+div{
+    width: 100%;
+    height: 100%;
+}

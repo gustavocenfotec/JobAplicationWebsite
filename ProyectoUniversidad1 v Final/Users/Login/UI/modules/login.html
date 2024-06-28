@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="login.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="module" src="login.controller.js"></script>
+        <title>Login</title>
+    </head>
+
+
+        <!-- En la mitad izquierda se pondra un texto que de bienvenida a la pagina de bolsa de trabajo -->
+        <section>
+            <h2>Bienvenidos  a Bolsa de Empleo del<br>Ministerio de Trabajo y Seguridad Social<br>del Gobierno de Costa Rica</h2>
+            <h4>Si es usuario nuevo, por favor <a href="/ProyectoUniversidad1 v Final/Users/Registro/Registro.UI/registro/Registro.html">Registrarse</a> </h4>
+        </section>
+        <!-- En la mitad derecha se agrega un encabezado y un formulario con las diferentes opciones para
+        el ingreso de informacion del actor -->
+        <aside>
+            <h1>Login</h1>
+            <p>Selección de tipo de cuenta</p>
+            <!-- Formulario de Obtencion de Informacion para el js, referencia por id -->
+            <form id="login">
+                <!-- Dos inputs de tipo radio para seleccionar el tipo de ingreso que se quiere
+                realizar junto un respectivo label -->
+                <input type="radio" id="usuario" name="acct" value="user">
+                <label>Usuario</label><br>
+                <input type="radio" id="empresa" name="acct" value="empresa">
+                <label>Empresa</label><br>
+                <!-- Dos inputs de tipo texto para ingresar la informacion respectiva -->
+                <label>Correo Electrónico: </label><br>
+                <input type="email" id="mail" name="email" placeholder="ejemplocorreo@gmail.com"><br>
+                <label>Contrasena:</label><br>
+                <input type="password" id="pwd" name="pswd" placeholder="********">
+                <!-- Un boton de tipo submit con el nombre de login que active la funcion
+                que lea la informacion ingresada -->
+                <button type="submit">Login</button>
+            </form>
+            <!-- Un link que envie a una pagina que permita cambiar/actualizar la contraseña -->
+            <a href="/ProyectoUniversidad1 v Final/Users/Olvido_Contrasena/UI/Olvido/OlvidoContrasena.html">Olvido su contraseña</a>
+        </aside>
+    </body>
+</html>

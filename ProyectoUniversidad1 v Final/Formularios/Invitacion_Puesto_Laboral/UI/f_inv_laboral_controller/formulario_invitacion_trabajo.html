@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario_invitacion_trabajo.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="formulario_invitacion_laboral_controller.js"></script>
+    <title>Invitacion Laboral</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de invitación laboral</h1>
+      <!-- Título del formulario -->
+    </header>
+      <form id="invitacion">
+        <section>
+          <label>Correo electrónico del invitado</label>
+          <!-- Etiqueta para el campo de correo electrónico -->
+          <input type="email" name="correo" id="correo" placeholder="DemoDeCorreo@gmail.com" value=""/>
+        <table id="Invitacion_Laboral">
+          <thead>
+              <tr>
+                  <th>Responsable</th>
+                  <th>Nombre del Puesto</th>
+
+                  <th>Enviar Invitación</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Rango Salarial:1000000.00</td>
+                  <td>Requisitos Minimos:2+ de Experiencia en JavaScript</td>
+                  <td>Requisitos Deseables:Conocimientos en Angular</td>
+                  <td>Requisitos Deseables:Conocimientos en Angular</td>
+                  <td>Requisitos Deseables:Conocimientos en Angular</td>
+              </tr>
+          </tbody>
+      </table>
+        <div class="submit">
+          <!-- Botón de envío del formulario -->
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

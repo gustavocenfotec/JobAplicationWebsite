@@ -1,0 +1,48 @@
+/* Estilos CSS para el reporte de estado de aplicación */
+
+* {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Fuente para todos los elementos */
+    color: black; /* Color de texto predeterminado */
+  }
+  
+  html {
+    height: 100vh; /* Altura del documento HTML al 100% de la ventana gráfica */
+    width: 100vw; /* Ancho del documento HTML al 100% de la ventana gráfica */
+    box-sizing: border-box; /* El tamaño total del elemento incluye el relleno y el borde, sin afectar el diseño */
+  }
+  
+  body {
+    background-color: rgb(4, 17, 34); /* Color de fondo del cuerpo */
+    display: flex; /* Uso de flexbox para el diseño del cuerpo */
+    flex-direction: column; /* Dirección de apilamiento vertical de los elementos del cuerpo */
+    padding: 100px; /* Espacio de relleno del cuerpo */
+  }
+  
+  header {
+    background-color: #7fda89; /* Color de fondo del encabezado */
+    margin-bottom: 10px; /* Margen inferior del encabezado */
+    text-align: center; /* Alineación del texto en el centro del encabezado */
+  }
+  
+  main {
+    background-color: #7fda89; /* Color de fondo del contenido principal */
+    width: 100%; /* Ancho del contenido principal al 100% de su elemento contenedor */
+  }
+  
+  table {
+    background-color: #e6f99d; /* Color de fondo de la tabla */
+    margin: 20px; /* Margen exterior de la tabla */
+    border: 2px solid black; /* Borde de la tabla */
+  }
+  
+  th {
+    border: 2px solid black; /* Borde de las celdas de encabezado */
+    width: 300px; /* Ancho de las celdas de encabezado */
+    text-align: center; /* Alineación del texto en el centro de las celdas de encabezado */
+  }
+  
+  td {
+    border: 2px solid black; /* Borde de las celdas de datos */
+    width: 300px; /* Ancho de las celdas de datos */
+    text-align: center; /* Alineación del texto en el centro de las celdas de datos */
+  }

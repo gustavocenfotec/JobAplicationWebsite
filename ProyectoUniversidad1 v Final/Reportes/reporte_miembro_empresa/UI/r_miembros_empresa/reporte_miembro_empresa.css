@@ -1,0 +1,64 @@
+/* se declara el color y fuente a usar en el documento */
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+/* se declaran valores de ancho y altura con un sizing border box */
+
+html{
+    box-sizing: border-box;
+}
+
+/* El body tendra un color de fondo y en flex se mostrara en columna con un padding respectivo */
+
+body{
+    background-color:rgb(4, 17, 34);;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+/* el encabezado tendra un color de fondo, estara centrado, con un borde negro redondeado
+y tendra un margen por debajo */
+
+header{
+    background-color: #7FDA89;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+/* El main tendra un color de fondo, un ancho, estara alineado al centro y tendra un borde negro redondeado */
+main{
+    background-color: #7FDA89;
+    width: 100%;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* Estilos para las tablas */
+table{
+    background-color: white;
+    margin: 20px;
+    border:2px solid black;
+}
+
+/* Estilos para las celdas de encabezado */
+th{
+    background-color: #1c7a88;
+    border:2px solid black;
+        text-align: center;
+}
+
+/* Estilos para las celdas de datos */
+td{
+    border:2px solid black;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+}

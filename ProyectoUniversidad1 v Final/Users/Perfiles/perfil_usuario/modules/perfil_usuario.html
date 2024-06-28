@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuario</title>
+    <link rel="stylesheet" href="perfil_usuario.css">
+    <script type="module" src="perfil_usuario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Perfil Usuario</title>
+</head>
+
+<body>
+    <main>
+        <!-- En esta seccion se agrega y actualiza la informacion del usuario -->
+        <section class="InformacionUsuario">
+            <!-- Aqui se agrega la foto de perfil -->
+            <section class="FotoUsuario">
+                <img id="imagenUsuario" src="" alt="Imagen de usuario" height="100%" width="100%">
+            </section>
+
+            <table>
+                <!-- Aqui se indicara el ingreso de Nombre y apellido del usuario -->
+                <tr>
+                    <td>
+                        <small>Nombre</small>
+                    </td>
+                    <td>
+                        <small>Apellidos</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="Nombre" type="text" >
+                    </td>
+                    <td>
+                        <input id="Apellidos" type="text">
+                    </td>
+                </tr>
+                <!-- Aqui se ingresa una breve descripcion por parte del usuario -->
+                <tr>
+                    <td>
+                        <small>Breve descripción de usted</small>
+                    </td>
+                    <td>
+                        <input id="descripcion" type="text" placeholder="Descripción de mi persona" maxlength="305">
+                    </td>
+                </tr>
+                <!-- Aqui se permite el ingreso de la contraseña -->
+                <tr>
+                    <td>
+                        <small>Contraseña</small>
+                    </td>
+                    <td>
+                        <input id="Contraseña" type="password" placeholder="*********" maxlength="12">
+                    </td>
+                </tr>
+                <!-- Aqui se permite guardar la imagen de perfil con la funcion SeleccionarImagen -->
+                <tr>
+                    <td>
+                        <small>Perfil</small>
+                    </td>
+                    <td>
+                        <input type="file" id="imagenInput" accept="image/*" style="display: none;">
+                        <button id="SeleccionarImagen"></button>
+                    </td>
+                </tr>
+
+                <!-- Con este boton se guardan las configuraciones realizadas al perfil con la funcion GuardarCambios -->
+                <tr>
+                    <td>
+                        <small>Guardar Cambios</small>
+                    </td>
+                    <td>
+                        <button id="GuardarCambios" ></button>
+                    </td>
+                </tr>
+            </table>
+
+            <section class="descripcion">
+                <!-- Sección de la descripción -->
+                <h4>Descripción</h4>
+                <p id="descripcionGuardar"></p>
+            </section>
+            </section>
+            <section class="Usuario">
+                <!-- Sección del usuario -->
+                <section class="header2">
+                    <!-- Encabezado de la sección del usuario -->
+                    <h1>Curriculum</h1>
+                </section>
+                <section class="Boton1">
+                    <!-- Sección del botón para seleccionar documento -->
+                    <input type="file" id="documentoInput" style="display: none;">
+                    <button id="SeleccionarDocumento"></button>
+                </section>
+                <section class="Curriculum">
+                    <!-- Sección del enlace para descargar el currículum -->
+                    <a id="descargarCurriculum" href="#" download="curriculum.pdf"></a>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

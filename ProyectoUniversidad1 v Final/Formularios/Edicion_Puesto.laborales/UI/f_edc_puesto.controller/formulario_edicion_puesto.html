@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario_edicion_puesto.css">
+    <!-- Comando para poder utilizar el axios en el html -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Se vincula el archivo CSS externo -->
+    <script src="formulario_edicion_puesto.js" type="module"></script>
+    <title>Edicion de Puestos Laborales</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h3>Puestos Laborales Actuales</h3>
+        <h2>Menu de Edición</h2>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+            <table id="Trabajos">
+                <thead>
+                    <!-- Fila de encabezado -->
+                    <tr>
+                        <!-- Columna: Puesto Laboral -->
+                        <th>Puesto Laboral</th>
+                        <!-- Columna: Rango Salarial -->
+                        <th>Rango Salarial</th>
+                        <!-- Columna: Requisitos Mínimos -->
+                        <th>Requisitos Mínimos</th>
+                        <!-- Columna: Atributos Deseables -->
+                        <th>Atributos Deseables</th>
+                        <!-- Columna: Editar -->
+                        <th>Editar</th>
+
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Celda: Botón de Eliminar -->
+                        <td>
+                            <!-- Botón para eliminar -->
+                            <button>Eliminar</button>
+                        </td>
+                        
+                        <!-- Celda: Campo de entrada para Rango Salarial -->
+                        <td>
+                            <!-- Campo de entrada de texto para Rango Salarial -->
+                            <input type="text" id="inputRangoSalarial">
+                        </td>
+                        
+                        <!-- Celda: Campo de entrada para Requisitos Mínimos -->
+                        <td>
+                            <!-- Campo de entrada de texto para Requisitos Mínimos -->
+                            <input type="text" id="inputRequisitosMinimos">
+                        </td>
+                        
+                        <!-- Celda: Campo de entrada para Atributos Deseables -->
+                        <td>
+                            <!-- Campo de entrada de texto para Atributos Deseables -->
+                            <input type="text" id="inputAtributosDeseables">
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+            <!-- Botón para enviar el formulario -->
+    </main>
+</body>
+</html>

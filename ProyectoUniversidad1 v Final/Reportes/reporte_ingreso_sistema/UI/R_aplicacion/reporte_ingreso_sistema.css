@@ -1,0 +1,57 @@
+/* Font family general para todo el documento presente y seteo de color */
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+/* 
+Aqui pone como estandar para el tamano completo de la pagina, por ende se le asigna al html */
+html{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+/* 
+Un body completo que agarra toda la image e utiliza flex para su distribucion en forma de columna
+y hace un padding para poder dar mas centralizacion al main */
+body{
+    background-color: rgb(4, 17, 34);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+/* 
+Header con un margin para separarlo del main y con su tex align centrado para mejor vizualizacion */
+header{
+    background-color: #7FDA89;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+/* 
+Main para poder definir el objeto tabla dentro de el */
+main{
+    background-color: #7FDA89;
+    width: 100%;
+
+}
+/* 
+tabla para poder posicionar la informacion con todo en negro */
+table{
+    background-color:#E6F99D;
+    margin: 20px;
+    border:2px solid black;
+
+}
+
+/* posicionamiento del header de la tabla y su coloramiento por miento de pixeles para cada uno */
+th{
+    border:2px solid black;
+    width: 300px;
+    text-align: center;
+}
+
+/* posicionamiento de las celdas de la tabla y su coloramiento por miento de pixeles para cada uno */
+td{
+    border:2px solid black;
+    width: 300px;
+    text-align: center;
+} 

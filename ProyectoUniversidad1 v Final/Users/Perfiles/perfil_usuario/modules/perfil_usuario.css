@@ -1,0 +1,145 @@
+/* Estilos generales */
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  /* Estilos del cuerpo de la página */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(230, 249, 157); /* Fondo verde claro */
+  }
+  
+  /* Estilos del contenedor principal */
+  main {
+    margin-top: 5%;
+    width: 85%;
+    height: 80%;
+    align-items: center;
+  }
+  
+  /* Estilos del contenedor de información del usuario */
+  .InformacionUsuario {
+    display: flex;
+    padding: 1%;
+    background-color: rgb(37, 144, 115); /* Fondo verde oscuro */
+    height: 30%;
+    width: 98%;
+  }
+  
+  /* Estilos del contenedor de datos del usuario */
+  .Usuario {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 2%;
+    background-color: rgb(127, 218, 137); /* Fondo verde claro */
+    height: 60%;
+    width: 96%;
+  }
+  
+  /* Estilos de la foto del usuario */
+  .FotoUsuario {
+    margin: 1.5%;
+    background-color: rgb(37, 144, 115); /* Fondo verde oscuro */
+    height: 80%;
+    width: 10%;
+  }
+  
+  /* Estilos de la tabla */
+  table {
+    padding: 1%;
+    width: 42.5%;
+    height: 100%;
+    background-color: rgb(127, 218, 137); /* Fondo verde claro */
+  }
+  
+  /* Estilos del botón dentro de la tabla */
+  table button {
+    background: url("/ProyectoUniversidad1 v Final/Imagenes/pencil.png") no-repeat center;
+    background-size: 90% 90%;
+    border: none;
+    height: 20px;
+    width: 20px;
+  }
+  
+  /* Estilos del input dentro de la tabla */
+  table input {
+    width: 90%;
+    height: 70%;
+    background-color: rgb(200, 233, 142); /* Fondo verde claro */
+    margin-bottom: 1.2%;
+  }
+  
+  /* Estilos del contenedor de descripción */
+  .descripcion {
+    display: flex;
+    padding: 1%;
+    width: 41.5%;
+    height: 93.5;
+    background-color: rgb(200, 233, 142); /* Fondo verde claro */
+    flex-direction: column;
+    text-align: center;
+    overflow: auto;
+    overflow-wrap: break-word;
+  }
+  
+  /* Estilos para los encabezados de la descripción */
+  .descripcion h4 {
+    margin-top: 0%;
+    margin-bottom: 1%;
+  }
+  
+  /* Estilos para los párrafos de la descripción */
+  .descripcion p {
+    margin-top: 1%;
+  }
+  
+  /* Estilos del botón 1 */
+  .Boton1 {
+    padding: 1%;
+    background-color: rgb(200, 233, 142); /* Fondo verde claro */
+    height: 9%;
+    width: 73%;
+  }
+  
+  /* Estilos del botón dentro de Boton1 */
+  .Boton1 button {
+    height: 100%;
+    width: 3.5%;
+    background: url("/ProyectoUniversidad1 v Final/Imagenes/pencil.png") no-repeat center;
+    background-size: 90% 90%;
+    border: none;
+  }
+  
+  /* Estilos del contenedor de curriculum */
+  .Curriculum {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 75%;
+    background-color: rgb(200, 233, 142); /* Fondo verde claro */
+  }
+  
+  /* Estilos del enlace dentro de Curriculum */
+  .Curriculum a {
+    height: 50%;
+    width: 20%;
+    background: url("/ProyectoUniversidad1 v Final/Imagenes/cv.png") no-repeat center;
+    background-size: 90% 90%;
+    border: none;
+  }
+  
+  /* Estilos del encabezado 2 */
+  .header2 {
+    text-align: center;
+    background-color: rgb(200, 233, 142); /* Fondo verde claro */
+    width: 75%;
+  }
+  

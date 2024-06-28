@@ -1,0 +1,135 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Se declara  la fuente que se usara durante todo el documento*/
+
+html {
+    box-sizing: border-box;
+}
+/* Se declara la altura y anchura del html */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 17, 34);
+    margin: 15px;
+}
+/* El body se mostrara en direccion de columna y se declara un color de fondo con un margen */
+
+header {
+    text-align: center;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+/* El header tendra el texto alineado al centro junto a un color y margen */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+button{
+    font-size: 16px;
+    border-radius: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    outline: none;
+    height: auto;
+    color: rgb(255, 255, 255);
+    padding: 10px 12px;
+    background-color: rgb(255, 0, 0);
+    font-family: inherit;
+    margin: 3px;
+}
+/* Similar a los botones anteriores, se cambia a un color de fondo rojo que permite mayor
+    facilidad de diferencia para el usuario */
+
+button:hover {
+    color: rgb(255, 0, 0);
+    border-radius: 50px;
+    border: 3px solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+/* Se configura un hover que basicamente invierte los colores en el boton */
+
+#encuentrosYa{
+    display: flex;
+    flex-direction: row;
+}
+#encuentrosYa button{
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 38px;
+    color: black;
+    padding: 10px 12px;
+    background-color: #7FDA89;
+    font-family: inherit;
+    margin: 3px;
+}
+
+#encuentrosYa button:hover {
+    color: white;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: #1c7a88;
+}
+
+input{
+    background-color: rgb(230, 249, 157);
+    border-radius: 20px;
+    margin-top: 5px;
+    height: 28px;
+    width: 900px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+/* El section se mostrara en forma de fila */
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+/*El main se mostrara en forma de fila*/
+
+/* Estilos para las tablas */
+table{
+    background-color: white;
+    margin: 20px;
+    border:2px solid black;
+}
+
+/* Estilos para las celdas de encabezado */
+th{
+    background-color: #1c7a88;
+    border:2px solid black;
+        text-align: center;
+}
+
+/* Estilos para las celdas de datos */
+td{
+    border:2px solid black;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(37, 144, 115);
+    margin: 15px;
+}
+
+/* Finalmente la informacion en el footer sera centrada y tendra un respectivo margen */

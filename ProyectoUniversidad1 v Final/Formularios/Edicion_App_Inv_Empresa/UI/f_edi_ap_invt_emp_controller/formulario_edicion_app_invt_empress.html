@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario_edicion_app_invt_empress.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="formulario_edicion_app_invt_empress_controller.js"></script>
+    <title>Menu de Actualización de Aplicaciones</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h3>Invitaciones a Fomar Parte de La Empresa</h3>
+        <h2>Menu de Edición de Aplicaciones</h2>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <form id="Trabajos">
+            <table id="Aplicaciones">
+                <thead>
+                    <!-- Fila de encabezado -->
+                    <tr>
+                        <th>Usuario que se aplico</th>
+                        <th>Puesto</th>
+                        <th>Aplicación Enviada</th>
+                        <th>Aprobada</th>
+                        <th>Rechazada</th>
+                        <th>Eliminar</th>
+                    </tr>
+
+                    <!-- Fila de datos -->
+                   
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Celda: Botón de Eliminar -->
+                        <td>
+                            <!-- Botón para eliminar -->
+                            <button>Eliminar</button>
+                        </td>
+
+                        <!-- Celda: Campo de entrada para Rango Salarial -->
+                        <td>
+                            <!-- Campo de entrada de texto para Rango Salarial -->
+                            <!-- <input type="text" id="inputPuesto"> -->
+                        </td>
+
+                        <!-- Celda: Campo de entrada para Requisitos Mínimos -->
+                        <td>
+                            <!-- Campo de entrada de texto para Requisitos Mínimos -->
+                            <input type="radio" id="input_aplicacion_recibida" name="estado_aplicacion">
+                        </td>
+
+                        <!-- Celda: Campo de entrada para Atributos Deseables -->
+                        <td>
+                            <!-- Campo de entrada de texto para Atributos Deseables -->
+                            <input type="radio" id="input_aplicacion_revision" name="estado_aplicacion">
+                        </td>
+
+                        <td>
+                            <!-- Campo de entrada de texto para Atributos Deseables -->
+                            <input type="radio" id="input_aplicacion_aprobada" name="estado_aplicacion">
+                        </td>
+
+                        <td>
+                            <!-- Campo de entrada de texto para Atributos Deseables -->
+                            <input type="radio" id="input_aplicacion_rechazada" name="estado_aplicacion">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Actualizar</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte de Estado de Invitaciones</title>
+    <script src="reporte_invitaciones_controller.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Se vincula el archivo JavaScript externo -->
+    <link rel="stylesheet" href="reporte_invitaciones.css" />
+    <!-- Se vincula el archivo CSS externo -->
+  </head>
+  <body>
+
+
+    <!-- Encabezado -->
+    <header>
+      <h2>Reporte de Estado de Invitaciones A Formar Parte de la Empresa</h2>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <table id="Tabla_invitaciones">
+          <thead>
+            <tr>
+              <th>Usuario que se invitó</th>
+              <th>Puesto</th>
+              <th>Aplicación Enviada</th>
+              <th>Aceptada</th>
+              <th>Rechazada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de datos -->
+            <tr>
+              <td>demoUsuario1@gmail.com</td>
+              <td>Ejemplo_Reclutador</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>demoUsuario2@gmail.com</td>
+              <td>Ejemplo_Reclutador</td>
+              <td>""</td>
+              <td>X</td>
+              <td>""</td>
+            </tr>
+            <tr>
+              <td>demoUsuario3@gmail.com</td>
+              <td>Ejemplo_Administrador</td>
+              <td>""</td>
+              <td>""</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>demoUsuario4@gmail.com</td>
+              <td>Ejemplo_Manager</td>
+              <td>X</td>
+              <td>""</td>
+              <td>""</td>
+            </tr>
+          </tbody>
+        </table>
+    </main>
+  </body>
+</html>

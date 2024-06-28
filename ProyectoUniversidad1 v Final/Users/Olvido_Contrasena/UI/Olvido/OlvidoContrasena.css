@@ -1,0 +1,63 @@
+/* Estilos CSS para el formulario de invitación */
+
+/* Estilos generales */
+* {
+    color: white; /* Color de texto para todos los elementos */
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Fuente para todos los elementos */
+  }
+  
+  html {
+    background-color: rgb(4, 17, 34);/* Color de fondo del documento HTML */
+    box-sizing: border-box; /* El tamaño total del elemento incluye el relleno y el borde, sin afectar el diseño */
+  }
+  
+  body {
+    display: flex; /* Uso de flexbox para el diseño del cuerpo */
+    justify-content: center; /* Centrar horizontalmente el contenido del cuerpo */
+    align-items: center; /* Centrar verticalmente el contenido del cuerpo */
+    margin: 150px; /* Margen exterior del cuerpo */
+    padding: 20px; /* Espacio de relleno del cuerpo */
+    background-color: rgb(127, 218, 137); /* Color de fondo del cuerpo */
+    border-radius: 50px; /* Radio de borde del cuerpo */
+    border: 2px solid rgb(0, 0, 0); /* Borde del cuerpo */
+    flex-direction: column; /* Dirección de apilamiento vertical de los elementos */
+  }
+  
+  /* Estilos para la sección */
+  section {
+    display: flex; /* Uso de flexbox para el diseño de la sección */
+    justify-content: center; /* Centrar horizontalmente el contenido de la sección */
+    align-items: center; /* Centrar verticalmente el contenido de la sección */
+    flex-direction: column; /* Dirección de apilamiento vertical de los elementos de la sección */
+    margin-right: 20px; /* Margen derecho de la sección */
+    text-align: center; /* Alineación del texto en el centro */
+  }
+  
+  section a {
+    color: blue; /* Color de texto para los enlaces dentro de la sección */
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    display: flex; /* Uso de flexbox para el diseño del formulario */
+    justify-content: center; /* Centrar horizontalmente el contenido del formulario */
+    align-items: center; /* Centrar verticalmente el contenido del formulario */
+    flex-direction: column; /* Dirección de apilamiento vertical de los elementos del formulario */
+    margin-right: 20px; /* Margen derecho del formulario */
+    text-align: center; /* Alineación del texto en el centro */
+  }
+  
+  #correo {
+    color: black; /* Color de texto para el campo de correo */
+    text-align: center; /* Alineación del texto en el centro para el campo de correo */
+  }
+  
+  button {
+    height: 70px; /* Altura del botón */
+    width: 200px; /* Ancho del botón */
+    background-color: black; /* Color de fondo del botón */
+    margin: 20px 0; /* Margen superior e inferior del botón */
+    border-bottom: 10px; /* Borde inferior del botón */
+    border-radius: 10px; /* Radio de borde del botón */
+  }

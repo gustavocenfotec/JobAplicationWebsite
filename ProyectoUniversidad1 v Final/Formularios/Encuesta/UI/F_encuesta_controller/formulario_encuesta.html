@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Encuesta de Empresa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="formulario_encuesta.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="formulario_encuesta_controller.js"></script>
+    <title>Crear Encuestas</title>
+  </head>
+  <body >
+    <header>
+        <!-- Encabezado de la página -->
+        <h1>Encuesta</h1>
+    </header>
+
+    <form id="formulario_encuesta">
+    <!-- Formulario de la encuesta -->
+    <div id="description"> Haznos saber que piensas de nuestros puestos</div><br>
+
+        <div class="sub-group">
+        <!-- Subgrupo de elementos relacionados -->
+        <label class="left" id="email-label" for="email">Email del usuario que deseas enviar:</label>
+        <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+        </div>
+
+    <h2>Opinion de la empresa</h2>
+
+    <div class="commentbox">
+    <!-- Área de comentarios para la opinión de la empresa -->
+    <textarea rows="4"  placeholder="Cuentanos que piensas de nosotros..." id="nosotros"></textarea>
+
+    <br></br>
+
+    <h2>Sugerencias de Puesto</h2>
+
+    <div class="commentbox">
+        <!-- Área de comentarios para las sugerencias de puesto -->
+    <textarea rows="4"  placeholder="Indicar el puesto y sugerencias" id="sugerencias"></textarea>
+
+    <br></br>
+
+    <h2>Otros</h2>
+
+    <div class="commentbox">
+        <!-- Área de comentarios para otros temas -->
+    <textarea rows="4"  placeholder="Comenta sobre un tema en especifico..." id="Otros"></textarea>
+
+<br></br>
+
+        <!-- Boton que permite subir la informacion ingresada -->
+    <button id="submit" type="submit">Submit</button>
+        </div>
+    </fieldset>
+    </form>
+
+</body>
+</html>
